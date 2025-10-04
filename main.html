@@ -4,17 +4,113 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
+	<title>Delicious Apple</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="/styles.css">
+    <style>
+		body{
+			/* background-color: #00d084;; */
+			font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-height:100vh;
+			margin: 0;
+
+			
+		}
+		.product{
+			border: 4px solid green;
+			display: flex;
+		}
+		/* left side */
+        .product__photo{
+            border:2px solid red;
+			margin-top: 30px;
+			margin-bottom: 30px;
+			border-radius: 10px;
+			margin-right: 20px;
+		
+        }
+		.photo-main{
+			background-color: greenyellow;
+			height: 500px;
+		}
+		.controls{
+			display: flex;
+			justify-content: space-between;
+			color: white;
+		}
+		.photo-album ul{
+         display: flex;
+		 justify-content: space-around;
+		 list-style: none;
+		 gap: 5px;
+		 margin-right: 8px;
+		}
+		.photo-album ul li{
+			border: 1px solid grey;
+			padding: 10px;
+		}
+		/* Right side*/
+        .product__info{
+			border: 1px solid blue;
+		}
+		.variant ul{
+			display: flex;
+			list-style-type: none;
+		}
+		.variant ul li:first-child{
+			border: 1px solid grey;
+
+		}
+		.add-to-cart{
+			background-color: rgb(245, 57, 57);
+			color: white;
+			padding: 20px 20px;
+			border-radius: 5px;
+			max-width: 200px;
+			font-size: 17px;
+			font-weight: bold;
+		}
+		.description{
+			color:rgb(109, 105, 105);
+			font-weight: 500;
+		}
+		.variant{
+			color:rgb(109, 105, 105);
+			font-weight: 500;
+		}
+		.price span{
+			color:rgb(245, 57,57) ;
+			font-size: 35px;
+			font-weight: 400;
+			margin-left: 8px;
+		}
+		.price{
+			color:rgb(245, 57,57) ;
+		}
+        .product__info{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+		}
+		.title h1{
+			font-weight: bold;
+			color:rgb(64, 62, 62);
+			font-family: ;
+		}
+
+    </style>
 </head>
 
 <body>
 	<section class="product">
 		<div class="product__photo">
 			<div class="photo-container">
+				<!-- main photo -->
 				<div class="photo-main">
 					<div class="controls">
 						<i class="fa fa-share-alt"></i>
@@ -23,6 +119,7 @@
 					<img src="https://res.cloudinary.com/john-mantas/image/upload/v1537291846/codepen/delicious-apples/green-apple-with-slice.png"
 						alt="green apple slice">
 				</div>
+				<!-- diffrent view of the apple -->
 				<div class="photo-album">
 					<ul>
 						<li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302064/codepen/delicious-apples/green-apple2.png"
@@ -37,6 +134,7 @@
 				</div>
 			</div>
 		</div>
+		<!-- second part of the Assign i.e product Information -->
 		<div class="product__info">
 			<div class="title">
 				<h1>Delicious Apples</h1>
@@ -59,8 +157,15 @@
 				</ul>
 			</div>
 			<div class="description">
-				
+				<h3>BENEFITS</h3>
+				<ul>
+					<li>Apples are nutricious</li>
+					<li>Apples may be good for weight loss</li>
+					<li>Apples may be good for bone health</li>
+					<li>They're linked to a lowest risk of diabetes</li>
+				</ul>
 			</div>
+			<button class="add-to-cart">ADD TO CART</button>
 		</div>
 	</section>
 </body>
